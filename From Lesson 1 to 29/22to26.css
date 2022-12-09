@@ -1,0 +1,60 @@
+        html{
+            font-size:20px;
+        }
+        /*Assignment 1*/
+        .ass1{
+            border: 3px solid orange;
+            padding:20px; 
+            text-align: center;
+            width: 70%;
+            margin: auto;
+        }
+        .para1{
+            border: 3px solid;
+            border-color:inherit ;
+            padding: inherit;
+            background-color: #eee;
+            font-size: 30px;
+        }
+        /* End of Assignment 1*/
+
+
+
+        /*Assignment 2*/
+        .ass2-1{
+            font-family: 'Open Sans', sans-serif;
+            font-size:25px;
+            text-align: center;
+            font-style:italic;
+            font-weight: 300;
+        }
+        .ass2-2{
+            font-family: 'Cairo', sans-serif;
+            font-size:25px;
+            text-align: center;
+            font-weight: 700;
+        }
+        .ass2-3{
+            font-family: 'Jomhuria', cursive;
+            font-size:25px;
+            text-align: center;
+            font-weight: 400;
+        }
+        /* End of Assignment 2*/
+
+
+
+        /*Assignment 3*/
+        .ass3-1{
+            font-size:2.5rem;
+            text-align: center;
+        }
+        .ass3-2{
+            font-size:2rem;
+            text-align: center;
+        }
+        .ass3-3{
+            font-size:1.5rem;
+            text-align: center;
+        }
+        /* End of Assignment 3*/

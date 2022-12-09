@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>13to16</title>
+        <style>
+            /*Assignment 1*/
+            .parent .child .title{
+                color:red;
+            }
+            .parent .title{
+                color:blue;
+            }
+            div p,.title{
+                color:green;
+            }
+            /*End of Assignment 1*/
+
+
+
+            /*Assignment 2*/
+            .one,
+            .two,
+            .three,
+            .four{
+                background-color: brown;
+                color: rgb(242, 226, 226);
+                margin: 20px;
+                padding: 15px;
+                max-width: 400px;
+                width: fit-content;
+                max-height: 25px;
+            }
+            .four{
+                overflow: hidden;
+            }
+            /*End of Assignment 2*/
+        </style>
+    </head>
+    <body>
+        <!--Assignment 1-->
+        <div class="parent">
+            <div class="child">This Is Child <span class="title">Title</span></div>
+            <span class="title">Child Title</span>
+            <p>Paragraph Content</p>
+        </div>
+        <div class="title">Section Title</div>
+        <!--End of Assignment 1-->
+
+
+        <hr/>
+
+
+        <!--Assignment 2-->
+            <p class="one">Title One</p>
+            <p class="two">Title Two With More Words</p>
+            <p class="three">Title Three Many Many Many Words</p>
+            <p class="four">Title Three Many Many Many Words Title Three Many Many Many Words
+                Title Three Many Many Many Words Title Three Many Many Many Words</p>
+        <!-- End of Assignment 2-->
+    </body>
+</html>
