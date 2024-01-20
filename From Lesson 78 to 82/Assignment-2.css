@@ -1,0 +1,5 @@
+/* Assignment 2 */
+.parent > div:nth-child(2){
+    color: red;
+}
+/* End of Assignment 2 */

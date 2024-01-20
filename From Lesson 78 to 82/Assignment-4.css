@@ -1,0 +1,5 @@
+/* Assignment 4 */
+body > div[title]:not([class="no-need"]){
+    color:red;
+}
+/* End of Assignment 4 */

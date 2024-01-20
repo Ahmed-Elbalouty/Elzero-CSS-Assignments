@@ -1,0 +1,5 @@
+/* Assignment 7 */
+div:nth-of-type(1) > div:nth-last-of-type(2){
+    color:red;
+}
+/* End of Assignment 7 */

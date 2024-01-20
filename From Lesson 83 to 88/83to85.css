@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Assignment 1 */
+@media print {
+    .assign-one{
+        font-size: 40px;
+    }
+}
+/* End of Assignment 1 */
+
+
+/* Assignment 2 */
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;  
+    margin: 20px 10px;
+}
+.container > div{
+    width: 100%;
+    background-color:#eee;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.container > div p{
+    margin-top: 8px;
+    color: gray;
+}
+/* Medium screens */
+@media (min-width: 992px){
+.container > div{
+    width:calc(50% - 20px);
+    }
+.container > div h3{
+    color:red;
+    }
+}
+/* Large screens */
+@media (min-width: 1200px){
+.container > div{
+    width: calc(25% - 40px);
+    }
+.container > div h3{
+    color:green;
+    }
+}
+/* End of Assignment 2 */
+
+
+/* Assignment 3 */
+.parent{
+    margin: 20px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+.parent > div{
+    width: 100%;
+    padding: 15px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.parent > div p{
+    margin-top: 8px;
+    color: gray;
+}
+/* Medium screens */
+@media (min-width: 992px){
+    .parent > div{
+        width: calc((100% / 3) - 20px);
+    }
+    .parent > div:first-child{
+        width: calc(100% - 20px);
+    }
+    .parent > div h3{
+        color: red;
+    }
+}
+/* Large screens */
+@media (min-width: 1200px){
+    .parent > div{
+        width: calc((100% / 2) - 20px);
+    }
+    .parent > div:first-child{
+        width: calc(100% - 20px);
+    }
+    .parent > div:last-child{
+        width: calc(100% - 20px);
+    }
+    .parent > div h3{
+        color: green;
+    }
+}
+/* End of Assignment 3 */

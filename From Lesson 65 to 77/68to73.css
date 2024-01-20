@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/* Assignment 1*/
+.ass-1{
+    width:150px;
+    height: 100px;
+    margin:40px auto;
+    background-color: orangered;
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ass-1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skew(10deg , 10deg);
+}
+.ass-1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: orangered;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skew(-10deg , -10deg);
+}
+/* End of Assignment 1*/
+
+/* Assignment 2*/
+:root{
+    --maincolor:green;
+}
+.ass-2{
+background-color: var(--maincolor);
+position: relative;
+color: white;
+margin: 20px auto;
+width: 150px;
+height: 100px;
+box-sizing: border-box;
+padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ass-2::before{
+content: '';
+background-color: var(--maincolor);
+position: absolute;
+left: -20px;
+top: 0;
+width: 80%;
+height: 100%;
+z-index: -1;
+transform: skewX(20deg);
+}
+.ass-2::after{
+content: '';
+position: absolute;
+left: -80px;
+top:0;
+height: 100px;
+width: 40px;
+background-color: var(--maincolor);
+transform: skewX(20deg);
+}
+/* End of Assignment 2*/
+
+
+/* Assignment 3*/
+.class {
+transform:matrix(3, 0.2679, 0, 3, 20, 100);
+}
+    /*
+    3 => scale x 
+    0.2679 => skew y
+    0 => skew x
+    3 => scale y
+    20 => translate x
+    100=> translate y 
+    */
+/* End of Assignment 3 */
+
+
+/* Assignment 4*/
+.ass-4{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #607d8b;
+    border-bottom:10px solid black ;
+    color: white;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+}
+.ass-4::before{
+    content: '';
+    position: absolute;
+    top: -71px;
+    left: 29px;
+    width: 71%;
+    height: 74%;
+    box-sizing: border-box;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    background-color: black;
+    transform: rotate(44.5deg);
+}
+/*  End of Assignment 4*/
+
+
+/* Assignment 5*/
+.parent{
+    margin: 40px auto;
+    width: 200px;
+    perspective: 600px;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.box:hover {
+    transform:  rotateY(-180deg);
+}
+.box .face {
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 30px;
+color: white;
+backface-visibility: hidden;
+}
+.box .front {
+background-color: red;
+}
+.box .back {
+background-color: green;
+transform: rotateY(180deg);
+}
+/* End of Assignment 5*/

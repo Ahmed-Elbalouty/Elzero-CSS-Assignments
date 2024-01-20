@@ -1,0 +1,134 @@
+/* Assignment 1 */
+.ass-1{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 7px solid red;
+    border-left-color: transparent;
+    position: relative;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.ass-1::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 7px solid blue;
+    border-right-color: transparent; 
+}
+.ass-1::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 7px solid yellow;
+    border-bottom-color: transparent;   
+}
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ass-1:hover {
+    animation-play-state: paused;
+}
+/* End of Assignment 1 */
+
+
+/*  Assignment 2 */
+.ass-2{
+    width: 50px;
+    height: 50px;
+    margin: 50px auto;
+    border-radius: 50%;
+    border: 7px solid red;
+    border-left-color: transparent;
+    position: relative;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    
+}
+.ass-2::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 7px solid blue;
+    border-right-color: transparent; 
+}
+.ass-2::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 7px solid black;
+    border-bottom-color: transparent;   
+}
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.ass-2:hover {
+    animation-play-state: running;
+}
+/* End of Assignment 2 */
+
+
+/*  Assignment 3 */
+.ass-3{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid black;
+    margin: 50px auto;
+    background-color: #eee;
+    border-left-color: transparent;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* End of Assignment 3 */
+
+

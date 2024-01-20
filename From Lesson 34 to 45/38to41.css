@@ -1,0 +1,154 @@
+/* Assignment 1*/
+.parent{
+    width: 500px;
+    counter-reset: count;
+    margin:50px auto;
+}
+.one,.two,.three{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(223, 212, 204);
+    border:3px solid black;
+    border-radius: 50px;
+    box-shadow:-5px -3px 0px 1px red , 5px 3px 0px 1px blue;
+    margin-right: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding:30px 20px;
+    position: relative;
+}
+.one::before,.two::before,.three::before{
+    counter-increment:count;
+    content: counter(count);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding:5px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top:-15px;
+    left:30px;
+}
+/* End of Assignment 1 */
+
+
+/* Assignment 2*/
+.four{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: rgb(223, 212, 204);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    box-shadow: 0px 2px 15px 2px black inset;
+}
+/* End of Assignment 2 */
+
+
+/* Assignment 3*/
+.main{
+    width:550px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+    height: 300px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.five{
+    width:250px;
+    background-color: rgb(223, 212, 204); 
+    display: inline-block;
+    position: absolute;
+    left:0;
+    height: 300px;
+}
+.five-1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+    border-radius: 7px;
+    box-sizing:border-box;
+    padding: 5px;
+    background-color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.five-2{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #eee;
+    text-align: center;
+    box-sizing:border-box;
+    line-height: 200px;   /* For center text vertically we set line-height property the same as height property*/
+    font-size: 25px;
+    margin: 20px auto 0;
+}
+.six{
+    width:250px;
+    background-color: rgb(223, 212, 204); 
+    display: inline-block;
+    position: absolute;
+    right:0;
+    height: 300px;
+}
+.six-1{
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+    border-radius: 7px;
+    box-sizing:border-box;
+    padding: 5px;
+    background-color: blue;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+.six-2{
+    width:200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: #eee;
+    text-align: center;
+    box-sizing:border-box;
+    line-height: 200px; 
+    font-size: 25px;
+    margin: 20px auto 0;
+}
+.empty{
+    position: absolute;
+    left: 50%;
+    height: 300px;
+    width: 2px;
+    background-color: blue;
+}
+.empty::before{
+    content: "Or";
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: blue;
+    left: -15px;
+    color: white;
+}
+/* End of Assignment 3 */

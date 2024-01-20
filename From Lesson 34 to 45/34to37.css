@@ -1,0 +1,184 @@
+/* Assignment 1*/
+.one,.two,.three{
+    width:300px;
+    height: 60px;
+    margin:auto;
+    font-size:40px;
+    text-align:center;
+    padding:20px;
+    margin-bottom: 20px;
+    background-color: rgb(223, 212, 204);
+}
+div:empty{
+    background-color:red;
+}
+/* End of Assignment 1 */
+
+
+/* Assignment 2 */
+.four{
+    width:600px;
+    background-color: rgb(223, 212, 204);
+    text-align: center;
+    padding: 46px;
+    font-size: 25px;
+    margin: auto;
+    position: relative;
+}
+.four:before{
+    content: "1";
+    position: absolute;
+    width: 60px;
+    height: 75%;
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    top: 50%;
+    margin-top: calc(90.75px / -2);
+    left: -30px;
+    text-align: center;
+    line-height: 90.75px;
+}
+/* End of Assignment 2 */
+
+
+/* Assignment 3 */
+.five{
+    width:600px;
+    padding: 30px;
+    background-color:rgb(223, 212, 204);
+    margin:auto;
+    font-size:25px;
+    position: relative;
+}
+.five::before{
+    content:attr(data-person);
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    padding:10px;
+    font-size:20px;
+    background-color: rgb(223, 212, 204);
+    left: -150px;
+    top:50%;
+    margin-top: calc(43px / -2);
+}
+.five::after {
+    content: "";
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+    top:50%;
+    left:-47px;
+    margin-top: -20px;    
+}
+.five,.six,.seven{
+    border-left: 8px solid red;
+}
+.six{
+    width:600px;
+    padding: 30px;
+    background-color:rgb(223, 212, 204);
+    margin:auto;
+    font-size:25px;
+    position: relative;
+    margin-top: 20px;
+}
+.six::before{
+    content: attr(data-person);
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(223, 212, 204);
+    left: -150px;
+    top:50%;
+    margin-top: calc(43px / -2);
+}
+.six::after {
+    content: "";
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+    top: 50%;
+    left:-47px;
+    margin-top: -20px;  
+}
+.seven{
+    width:600px;
+    padding: 30px;
+    background-color:rgb(223, 212, 204);
+    margin:auto;
+    font-size:25px;
+    position: relative;
+    margin-top: 20px;
+}
+.seven::before{
+    content:attr(data-person);
+    position: absolute;
+    width: 80px;
+    text-align: center;
+    padding: 10px;
+    font-size:20px;
+    background-color: rgb(223, 212, 204);
+    left: -150px;
+    top:50%;
+    margin-top: calc(43px / -2);
+}
+.seven::after {
+    content: "";
+    position: absolute;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent red transparent transparent;
+    top:50%;
+    left:-47px;
+    margin-top: -20px;  
+}
+/* End of Assignment 3 */
+
+
+/* Assignment 4 */
+body{
+    counter-reset: count;
+}
+.ass4-1,.ass4-2,.ass4-3,
+.ass4-4,.ass4-5,.ass4-6{
+    width: 600px;
+    height: 50px;
+    padding: 15px;
+    background-color: rgb(223, 212, 204);
+    font-size:25px;
+    margin: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.ass4-1::before,.ass4-2::before,.ass4-3::before,
+.ass4-4::before,.ass4-5::before,.ass4-6::before{
+    counter-increment: count;
+    content: counter(count);
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 70px;
+    color:white;
+    top:0;
+    left:-70px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 80px;
+}
+.ass4-1::after,.ass4-2::after,.ass4-3::after,
+.ass4-4::after,.ass4-5::after,.ass4-6::after{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    background-color: red;  
+    right:-7px;
+    top:0;
+}
+/* End of Assignment 4 */

@@ -1,0 +1,30 @@
+/* Assignment 3*/
+.main{
+    width:400px;
+    margin:auto;
+    list-style: none;
+    padding: 0;
+}
+.list1{
+    margin-bottom: 10px;
+}
+.list1 li{
+    background-color: white;
+    margin: 5px;
+    padding: 3px 5px;
+}
+.ml{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(231, 229, 229);
+}
+.sub{
+    list-style-position: inside;
+    padding: 0;
+}
+.sub li{
+    background-color: white;
+    margin: 5px;
+    padding: 3px 5px;
+}
+/* End of Assignment 3*/

@@ -1,0 +1,50 @@
+        /*Assignment 1*/
+        .ass1-shape-1,.ass1-shape-2,.ass1-shape-3{
+            display: inline-block;
+            padding: 50px;
+            background-color:#eee;
+            margin-right: 20px;
+            margin-left:20px;
+        }
+        .ass1-shape-1{
+            border-width: 5px;
+            border-style:solid;
+            border-color: red;
+            outline: 5px solid black;
+        }
+        .ass1-shape-2{
+            border-width: 5px;
+            border-style:solid;
+            border-color: blue green;
+            outline: 5px solid black;
+        }
+        .ass1-shape-3{
+            border-width: 5px;
+            border-style:dashed;
+            border-color:red green blue yellow;
+            outline: 5px solid black;
+        }
+        /*End of Assignment 1*/
+
+
+        /*Assignment 2*/
+        .ass2-shape-1,.ass2-shape-2,.ass2-shape-3{
+            width: 400px;
+            background-color: #eee;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            padding: 15px;
+        }
+        .ass2-shape-1{ 
+            border-left: 7px  solid rgba(220, 36, 91, 0.882);
+            outline: 15px solid #eee;
+        }
+        .ass2-shape-2{ 
+            visibility: hidden;
+        }
+        .ass2-shape-3{ 
+            border-left: 7px  solid rgba(24, 184, 202, 0.882) ;
+            outline: 15px solid #eee;
+        }
+        /*End of Assignment 2*/
