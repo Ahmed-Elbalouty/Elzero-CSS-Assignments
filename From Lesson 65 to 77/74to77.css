@@ -132,3 +132,133 @@
 /* End of Assignment 3 */
 
 
+/*  Assignment 4 */
+.ass-4{
+    font-size: 400px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px auto;
+    width: fit-content;
+    position: relative;
+}
+.e{
+    display: inline-block;
+    position: relative;
+}
+.l{
+    display: inline-block;
+    margin-left: -100px;
+    position: relative;
+}
+.e::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    top: 89px;
+    right: 33px;
+    animation-name: move-e;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes move-e {
+    6%{
+        top: 89px;
+        right: 208px;
+    }
+    13%{
+        right: 208px;
+        top: 211px;
+    }
+    20%{
+        right: 45px;
+        top: 211px;
+    }
+    27%{
+        right: 208px;
+        top: 211px;
+    }
+    34%{
+        right: 208px;
+        top: 342px;
+    }
+    40%{
+        right: 27px;
+        top: 342px;
+    }
+    42%{
+        right: 208px;
+        top: 342px;
+    }
+    44%{
+        right: 208px;
+        top: 211px;
+    }
+    47%{
+        top: 89px;
+        right: 208px;
+    }
+    50%{
+        top: 89px;
+        right: 33px;
+    }
+    100%{
+        top: 89px;
+        right: 33px;
+    }
+}
+.l::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    top: 342px;
+    left: 182px;
+    animation-name: move-l;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes move-l {
+    0%{
+        top: 342px;
+        left: 182px;
+        opacity: 0;
+    }
+    50%{
+        top: 342px;
+        left: 182px;
+        opacity: 0;
+    }
+    55%{
+        top: 342px;
+        left: 182px;
+        opacity: 1;
+    }
+    67%{
+        top: 342px;
+        left: 38px;
+        opacity: 1;
+    }
+    85%{
+        top: 89px;
+        left: 38px;
+        opacity: 1;
+    }
+    90%{
+        top: 89px;
+        left: 38px;
+    }
+    100%{
+        top: 89px;
+        left: 38px;
+        opacity: 0;
+    }
+}
+/* End of Assignment 4 */
+
+
