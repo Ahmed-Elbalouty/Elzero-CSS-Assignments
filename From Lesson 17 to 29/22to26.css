@@ -24,16 +24,20 @@
             font-family: 'Open Sans', sans-serif;
             font-size: 30px;
             text-align: center;
+            font-weight: 300;
+            font-style: italic;
         }
         .ass2-2{
             font-family: 'Cairo', sans-serif;
             font-size: 30px;
             text-align: center;
+            font-weight: 700;
         }
         .ass2-3{
             font-family: 'Jomhuria', cursive;
             font-size: 30px;
             text-align: center;
+            font-weight: 300;
         }
         /* End of Assignment 2*/
 
