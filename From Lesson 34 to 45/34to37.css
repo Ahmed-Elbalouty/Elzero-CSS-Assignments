@@ -18,125 +18,67 @@ div:empty{
 /* Assignment 2 */
 .four{
     width:600px;
+    height: 60px;
     background-color: rgb(223, 212, 204);
     text-align: center;
-    padding: 46px;
+    padding: 20px;
     font-size: 25px;
     margin: auto;
     position: relative;
+    line-height: 60px;
 }
 .four:before{
     content: "1";
     position: absolute;
     width: 60px;
-    height: 75%;
+    height: 80px;
     background-color: red;
     color: white;
     font-size: 40px;
     top: 50%;
-    margin-top: calc(90.75px / -2);
+    margin-top: -40px;
     left: -30px;
     text-align: center;
-    line-height: 90.75px;
+    line-height: 80px;
 }
 /* End of Assignment 2 */
 
 
 /* Assignment 3 */
-.five{
-    width:600px;
-    padding: 30px;
-    background-color:rgb(223, 212, 204);
-    margin:auto;
-    font-size:25px;
-    position: relative;
-}
-.five::before{
-    content:attr(data-person);
-    position: absolute;
-    width: 80px;
-    text-align: center;
-    padding:10px;
-    font-size:20px;
-    background-color: rgb(223, 212, 204);
-    left: -150px;
-    top:50%;
-    margin-top: calc(43px / -2);
-}
-.five::after {
-    content: "";
-    position: absolute;
-    border-width: 20px;
-    border-style: solid;
-    border-color: transparent red transparent transparent;
-    top:50%;
-    left:-47px;
-    margin-top: -20px;    
-}
 .five,.six,.seven{
+    width: 600px;
+    height: 60px;
+    padding: 20px;
+    background-color: rgb(223, 212, 204);
+    margin: 20px auto;
+    font-size: 25px;
+    position: relative;
+    line-height: 60px;
     border-left: 8px solid red;
 }
-.six{
-    width:600px;
-    padding: 30px;
-    background-color:rgb(223, 212, 204);
-    margin:auto;
-    font-size:25px;
-    position: relative;
-    margin-top: 20px;
-}
-.six::before{
+.five::before,.six::before,.seven::before{
     content: attr(data-person);
     position: absolute;
     width: 80px;
+    height: 30px;
     text-align: center;
+    line-height: 30px;
     padding: 10px;
     font-size: 20px;
     background-color: rgb(223, 212, 204);
     left: -150px;
-    top:50%;
-    margin-top: calc(43px / -2);
+    top: 50%;
+    margin-top: -25px;
 }
-.six::after {
+.five::after,.six::after,.seven::after {
     content: "";
     position: absolute;
     border-width: 20px;
     border-style: solid;
     border-color: transparent red transparent transparent;
     top: 50%;
-    left:-47px;
-    margin-top: -20px;  
-}
-.seven{
-    width:600px;
-    padding: 30px;
-    background-color:rgb(223, 212, 204);
-    margin:auto;
-    font-size:25px;
-    position: relative;
-    margin-top: 20px;
-}
-.seven::before{
-    content:attr(data-person);
-    position: absolute;
-    width: 80px;
-    text-align: center;
-    padding: 10px;
-    font-size:20px;
-    background-color: rgb(223, 212, 204);
-    left: -150px;
-    top:50%;
-    margin-top: calc(43px / -2);
-}
-.seven::after {
-    content: "";
-    position: absolute;
-    border-width: 20px;
-    border-style: solid;
-    border-color: transparent red transparent transparent;
-    top:50%;
-    left:-47px;
-    margin-top: -20px;  
+    left: -48px;
+    margin-top: -20px;    
 }
 /* End of Assignment 3 */
 
@@ -145,8 +87,7 @@ div:empty{
 body{
     counter-reset: count;
 }
-.ass4-1,.ass4-2,.ass4-3,
-.ass4-4,.ass4-5,.ass4-6{
+.ass4{
     width: 600px;
     height: 50px;
     padding: 15px;
@@ -155,9 +96,9 @@ body{
     margin: auto;
     margin-bottom: 10px;
     position: relative;
+    line-height: 50px;
 }
-.ass4-1::before,.ass4-2::before,.ass4-3::before,
-.ass4-4::before,.ass4-5::before,.ass4-6::before{
+.ass4::before{
     counter-increment: count;
     content: counter(count);
     position: absolute;
@@ -171,8 +112,7 @@ body{
     text-align: center;
     line-height: 80px;
 }
-.ass4-1::after,.ass4-2::after,.ass4-3::after,
-.ass4-4::after,.ass4-5::after,.ass4-6::after{
+.ass4::after{
     content: "";
     position: absolute;
     width: 7px;
