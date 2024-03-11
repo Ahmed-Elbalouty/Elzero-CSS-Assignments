@@ -1,10 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 /* Assignment 1*/
 .parent{
-    width: 500px;
+    width: fit-content;
     counter-reset: count;
-    margin:50px auto;
+    margin: 30px auto;
 }
-.one,.two,.three{
+.one{
     width: 100px;
     height: 100px;
     background-color: rgb(223, 212, 204);
@@ -19,7 +22,7 @@
     padding:30px 20px;
     position: relative;
 }
-.one::before,.two::before,.three::before{
+.one::before{
     counter-increment:count;
     content: counter(count);
     width: 30px;
@@ -27,26 +30,37 @@
     border-radius: 15px;
     font-size: 18px;
     box-sizing: border-box;
-    padding:5px;
     background-color: black;
     color: white;
     position: absolute;
-    top:-15px;
-    left:30px;
+    line-height: 30px;
+    top: -15px;
+    left: 50%;
+    margin-left: -15px;
+}
+.one::after{
+    content: "Element";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 100px;
 }
 /* End of Assignment 1 */
 
 
 /* Assignment 2*/
-.four{
+.two{
     width: 100px;
     height: 100px;
     margin: auto;
     background-color: rgb(223, 212, 204);
+    border-top-left-radius: 15px 25px;
+    border-bottom-right-radius: 15px 25px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
     box-shadow: 0px 2px 15px 2px black inset;
 }
 /* End of Assignment 2 */
@@ -54,101 +68,77 @@
 
 /* Assignment 3*/
 .main{
-    width:550px;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing:border-box;
-    height: 300px;
+    width: 550px;
+    margin: 30px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.three{
+    box-sizing: border-box;
+    width: 250px;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    float: left;
+}
+.basic,.pro{
+    background-color: blue;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    padding: 15px;
+    margin: 20px auto;
+}
+.free,.price{
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    line-height: 200px;
+}
+.four{
+    box-sizing: border-box;
+    width: 250px;
+    background-color: #eee;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    float: right;
     position: relative;
-    margin-bottom: 30px;
-    margin-left:auto;
-    margin-right: auto;
 }
-.five{
-    width:250px;
-    background-color: rgb(223, 212, 204); 
-    display: inline-block;
+.four::before{
+    content: "";
     position: absolute;
-    left:0;
-    height: 300px;
-}
-.five-1{
-    width: 80%;
-    margin-left: 10%;
-    margin-right:10%;
-    border-radius: 7px;
-    box-sizing:border-box;
-    padding: 5px;
-    background-color: blue;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-}
-.five-2{
-    width:200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: #eee;
-    text-align: center;
-    box-sizing:border-box;
-    line-height: 200px;   /* For center text vertically we set line-height property the same as height property*/
-    font-size: 25px;
-    margin: 20px auto 0;
-}
-.six{
-    width:250px;
-    background-color: rgb(223, 212, 204); 
-    display: inline-block;
-    position: absolute;
-    right:0;
-    height: 300px;
-}
-.six-1{
-    width: 80%;
-    margin-left: 10%;
-    margin-right:10%;
-    border-radius: 7px;
-    box-sizing:border-box;
-    padding: 5px;
-    background-color: blue;
-    font-weight: bold;
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-}
-.six-2{
-    width:200px;
-    height: 200px;
-    border-radius: 100px;
-    background-color: #eee;
-    text-align: center;
-    box-sizing:border-box;
-    line-height: 200px; 
-    font-size: 25px;
-    margin: 20px auto 0;
-}
-.empty{
-    position: absolute;
-    left: 50%;
-    height: 300px;
     width: 2px;
+    height: 100%;
     background-color: blue;
+    left: -26px;
+    top:0;
 }
-.empty::before{
+.four::after{
     content: "Or";
     position: absolute;
-    top: 50%;
-    margin-top: -15px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    border-radius: 15px;
-    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
     background-color: blue;
-    left: -15px;
     color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    left: -45px;
+    top:50%;
+    margin-top: -20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 /* End of Assignment 3 */
