@@ -114,6 +114,7 @@ in our case from left to right because the writing-mode is the default value.
     text-align:center;
     box-sizing: border-box;
     height:80px;  
+    line-height: 80px;
 }
 .one-3{
     width: 40px;
@@ -123,11 +124,9 @@ in our case from left to right because the writing-mode is the default value.
 .two-3{
     width: 50%;
     text-align: center;
-    line-height: 80px;
 }
 .three-3{
     width: 40px;
-    line-height: 80px;
     align-self: flex-end;
 }
 /* End of Assignment 4 */
@@ -141,7 +140,6 @@ in our case from left to right because the writing-mode is the default value.
     background-color:#eee;
     margin:20px auto;
     display:flex;
-    flex-direction:row;
     justify-content: space-between;
 }
 .parent-4 div{
@@ -179,65 +177,126 @@ in our case from left to right because the writing-mode is the default value.
     padding: 0;
 }
 :root{
---main-color:#eee;
+    --main-color:#eee;
+    --section-color :#ddd;
 }
 .page{
-width: 80%;
-margin: 20px auto;
-background-color: rgb(223, 212, 204);
-display: flex;
-flex-wrap: wrap;
-box-sizing: border-box;
-padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
 }
 .header{
-width: 100%;
-display: flex;
-justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .logo{
-width: 8%;
-text-align: center;
-background-color: var(--main-color);
-padding: 10px;
+    width: 8%;
+    text-align: center;
+    background-color: var(--section-color);
+    padding: 10px;
 }
 .links{
-width: 86%;
-background-color: var(--main-color);
-list-style: none;
-display: flex;
-justify-content: flex-end;
-padding: 10px;
+    width: 86%;
+    background-color: var(--section-color);
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 .links li{
-margin-left: 10px;
+    margin-left: 10px;
 }
 .main-area{
-margin-top: 20px;
-width: 100%;
-display:flex;
-justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
 }
 .content{
-width: 68%;
-background-color: var(--main-color);
-height: 450px;
-box-sizing: border-box;
-padding:10px;
+    width: 68%;
+    background-color: var(--section-color);
+    height: 450px;
+    box-sizing: border-box;
+    padding:10px;
 }
 .sidebar{
-width: 30%;
-background-color: var(--main-color);
-height: 450px;
-box-sizing: border-box;
-padding:10px;
+    width: 30%;
+    background-color: var(--section-color);
+    height: 450px;
+    box-sizing: border-box;
+    padding:10px;
 }
 .footer{
-width: 100%;
-display:flex;
-justify-content: space-between;
-background-color: var(--main-color);
-padding: 10px;
-margin-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    background-color: var(--section-color);
+    padding: 10px;
+    margin-top: 20px;
+} 
+
+
+/* Another way to ttyle previous Assignment */
+/* .page {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #eee;
+    padding: 20px;
 }
+.page .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.page .header .logo{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #ddd;
+    width: fit-content;
+}
+.page .header .links{
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #ddd;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    list-style-type: none;
+}
+.main-area{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.main-area .content{
+    background-color: #ddd;
+    padding: 15px;
+    width: 70%;
+    height: 300px;
+}
+.main-area .sidebar{
+    background-color: #ddd;
+    padding: 15px;
+    flex-grow: 1;
+    height: 300px;
+}
+.footer{
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}  */
+
+
 /* End of Assignment 6 */
