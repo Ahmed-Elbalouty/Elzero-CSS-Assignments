@@ -1,30 +1,26 @@
 /* Assignment 3*/
+ul{
+    margin: 0;
+    padding-left: 0;
+}
 .main{
-    width:400px;
-    margin:auto;
+    width: 400px;
+    margin: 20px auto;
     list-style: none;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
-.list1{
-    margin-bottom: 10px;
+.main .item{
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #ccc;
 }
-.list1 li{
-    background-color: white;
-    margin: 5px;
-    padding: 3px 5px;
+.main .item li{
+    background-color: #eee;
+    padding: 8px;
+    margin: 10px;
 }
-.ml{
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(231, 229, 229);
-}
-.sub{
+.item ul{
     list-style-position: inside;
-    padding: 0;
-}
-.sub li{
-    background-color: white;
-    margin: 5px;
-    padding: 3px 5px;
 }
 /* End of Assignment 3*/
