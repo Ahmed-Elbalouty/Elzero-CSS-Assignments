@@ -6,7 +6,7 @@ body{
     width:100px;
     height:100px;
     border-radius: 50px;
-    box-shadow: 3px 0px 0px 0px orangered , -3px 0px 0px 0px blue;
+    box-shadow: 5px 0px 0px 0px orangered , -5px 0px 0px 0px blue;
     background-color: #eee;
     color: orangered;
     font-size: 25px;
@@ -114,19 +114,16 @@ in our case from left to right because the writing-mode is the default value.
     text-align:center;
     box-sizing: border-box;
     height:80px;  
-    line-height: 80px;
+    max-width: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .one-3{
-    width: 40px;
-    line-height: 80px;
     align-self: flex-end;
 }
-.two-3{
-    width: 50%;
-    text-align: center;
-}
 .three-3{
-    width: 40px;
     align-self: flex-end;
 }
 /* End of Assignment 4 */
@@ -175,6 +172,7 @@ in our case from left to right because the writing-mode is the default value.
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 :root{
     --main-color:#eee;
@@ -195,13 +193,13 @@ in our case from left to right because the writing-mode is the default value.
     justify-content: space-between;
 }
 .logo{
-    width: 8%;
+    width: 10%;
     text-align: center;
     background-color: var(--section-color);
     padding: 10px;
 }
 .links{
-    width: 86%;
+    width: 85%;
     background-color: var(--section-color);
     list-style: none;
     display: flex;
@@ -218,7 +216,7 @@ in our case from left to right because the writing-mode is the default value.
     justify-content: space-between;
 }
 .content{
-    width: 68%;
+    width: 65%;
     background-color: var(--section-color);
     height: 450px;
     box-sizing: border-box;
@@ -241,7 +239,7 @@ in our case from left to right because the writing-mode is the default value.
 } 
 
 
-/* Another way to ttyle previous Assignment */
+/* Another way to style previous Assignment */
 /* .page {
     width: 90%;
     margin: 20px auto;
