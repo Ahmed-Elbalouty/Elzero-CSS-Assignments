@@ -4,7 +4,7 @@
 }
 /* Assignment 1*/
 .ass-1{
-    width:150px;
+    width: 150px;
     height: 100px;
     margin:40px auto;
     background-color: orangered;
@@ -71,7 +71,7 @@
     content: '';
     position: absolute;
     left: -80px;
-    top:0;
+    top: 0;
     height: 100px;
     width: 40px;
     background-color: var(--maincolor);
@@ -104,12 +104,12 @@
     border-bottom: 6px solid black ;
     color: white;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: flex-end;
     padding: 10px;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
-    position:relative;
+    position: relative;
 }
 .ass-4::before{
     content: "";
@@ -146,7 +146,7 @@
     transition: transform 1s;
 }
 .box:hover {
-    transform:  rotateY(-180deg);
+    transform: rotateY(-180deg);
 }
 .box .face {
     position: absolute;
