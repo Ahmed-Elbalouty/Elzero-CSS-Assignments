@@ -101,7 +101,7 @@
     height: 200px;
     margin: 100px auto;
     background-color: #607d8b;
-    border-bottom:10px solid black ;
+    border-bottom: 6px solid black ;
     color: white;
     display: flex;
     justify-content:flex-start;
@@ -112,17 +112,18 @@
     position:relative;
 }
 .ass-4::before{
-    content: '';
+    content: "";
     position: absolute;
-    top: -71px;
-    left: 29px;
-    width: 71%;
-    height: 74%;
-    box-sizing: border-box;
-    border-right: 10px solid white;
-    border-bottom: 10px solid white;
+    top: 0;
+    left: 0;
     background-color: black;
-    transform: rotate(44.5deg);
+    width: 141px;
+    height: 141px;
+    box-sizing: border-box;
+    border-left: 6px solid white;
+    border-bottom: 6px solid white;
+    transform-origin: left top;
+    rotate: -45deg;
 }
 /*  End of Assignment 4*/
 
