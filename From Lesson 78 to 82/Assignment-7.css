@@ -2,4 +2,9 @@
 div:nth-of-type(1) > div:nth-last-of-type(2){
     color:red;
 }
+
+/* Another Solution */
+div:not(.no-need,.no-need-2)  >  h3 + div:not(.no-need):nth-last-of-type(2){
+    color: red;
+}
 /* End of Assignment 7 */
